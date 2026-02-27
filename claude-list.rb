@@ -6,17 +6,14 @@ class ClaudeList < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/skykewei/claude-list/releases/download/v#{version}/claude-list-darwin-arm64.tar.gz"
-      sha256 "3bd139aa3026ad656a7c997990dd9318fd4c0eeb0dbae63a6c19261ca936027f"
-    else
-      url "https://github.com/skykewei/claude-list/releases/download/v#{version}/claude-list-darwin-amd64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_DARWIN_AMD64"
+      sha256 "4229e85f31e0578de13a68dcc7779836ac26cc613509f1463e377ebe52e2b0c0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/skykewei/claude-list/releases/download/v#{version}/claude-list-linux-amd64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_AMD64"
+      sha256 "ae8517a512e88aa53b0b131656ea6244c3fb11f9f26332978495f7bc1272dcf7"
     end
   end
 
